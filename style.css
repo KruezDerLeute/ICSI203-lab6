@@ -1,0 +1,459 @@
+@font-face {
+  font-family: 'JetBrains Sans';
+  src: url("./fonts/JetBrainsSans[wght]-VF.ttf");
+}
+
+* {
+  font-family: 'JetBrains Sans';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+
+.gen-header {
+  background-color: #19191c;
+  width: 100%;
+  height: 72px;
+  border-bottom: 1px solid #474749;
+}
+
+.gen-sub-header {
+  background-color: #19191c;
+  height: 65px;
+
+}
+
+.logo {
+  height: 40px;
+}
+
+.gen-header .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.title-area p {
+  margin-bottom: 0;
+  display: flex;
+  font-size: 20px;
+  color: #bababb;
+  font-family: "JetBrains Sans", sans-serif;
+}
+
+.title-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: auto;
+  gap: 30px;
+  font-size: 19px;
+}
+
+.gen-header .container .title-area {
+  color: #bababb;
+  height: 30px;
+}
+
+.fa-language {
+  color: #bababb;
+}
+
+.mdi-translate {
+  color: #bababb;
+}
+
+.title-area p:hover {
+  color: #ffffff;
+}
+
+.title-area i:hover {
+  color: #ffffff;
+}
+
+.title-area span:hover {
+  color: #ffffff;
+}
+
+.gen-sub-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.gen-sub-header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.gen-sub-header .container .left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.gen-sub-header .container p {
+  margin: 0;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: 'JetBrains Sans', sans-serif;
+  font-size: 20px;
+}
+
+.gen-sub-header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* important */
+  align-items: center;
+}
+
+.tag {
+  background-color: #303033;
+  border-radius: 4px;
+  color: #c1c1c2;
+  font-size: 14px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.gen-sub-header .container .right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: flex-end;
+  gap: 15px;
+}
+
+.gen-sub-header .container .right span {
+  color: #c1c1c2;
+  /* or white */
+}
+
+
+
+/*--------------------------------*/
+/* Parent container for dropdown */
+.dropdown {
+  position: relative;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  background-color: #2b2b2d;
+  border: 1px solid #4b4b4d;
+  width: 210px;
+  z-index: 999;
+}
+
+.dropdown .menu p {
+  margin: 12px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.dropdown:hover .menu {
+  display: block;
+}
+
+.dropdown:hover .trigger {
+  color: white;
+}
+
+.dropdown:hover .trigger i {
+  color: white;
+}
+
+.product-redirect {
+  background-color: transparent;
+  border: 1px solid #4b4b4d;
+  border-radius: 25px;
+  padding: 10px 25px 10px 25px;
+  color: white;
+}
+
+.download {
+  background-color: #088484;
+  border: 1px solid #4b4b4d;
+  border-radius: 25px;
+  padding: 10px 25px 10px 25px;
+  color: white;
+}
+
+/* hero with only the decorative SVG as a background */
+.intro-face {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  /* controls hero height — tweak as needed */
+  background-color: #000;
+  /* black background like your page */
+  background-image: url('./resources/backgroundLogo.svg');
+  background-repeat: no-repeat;
+  background-position-x: 550px;
+  z-index: 1;
+  background-position-y: -480px;
+  /* scales the SVG so it fits without cropping */
+  overflow: visible;
+}
+
+.intro-face .pc {
+  position: absolute;
+  top: 150px;
+  /* <- adjust this to move the PC logo vertically */
+  right: 140px;
+  /* <- adjust horizontally */
+  z-index: 990;
+  background-color: white;
+}
+
+.intro-face .container {
+  padding-top: 140px;
+}
+
+.intro-face .container h4 {
+  color: white;
+  font-size: 40px;
+  font-weight: 580;
+}
+
+.intro-face .container h1 {
+  color: white;
+  font-size: 70px;
+}
+
+.intro-face .container p {
+  color: white;
+  font-size: 30px;
+}
+
+.intro-face .container button {
+  margin-top: 30px;
+  background-color: #088484;
+  border: 1px solid #4b4b4d;
+  border-radius: 25px;
+  padding: 10px 25px 10px 25px;
+  color: white;
+}
+
+.intro-face .container .note {
+  margin-top: 20px;
+  font-size: 15px;
+  color: #b3b3b3;
+}
+
+.banner {
+  border-radius: 30px;
+  width: 100%;
+  height: auto;
+  background-color: #021919;
+  padding: 25px;
+  color: white;
+}
+
+.banner .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.banner .top span {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  align-self: center;
+  border: 1px solid #4b4b4d;
+  border-radius: 30px;
+  font-size: 20px;
+}
+
+.banner p {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 29px;
+}
+
+.banner .items {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.banner .items span {
+  margin-top: 15px;
+  background-color: #088484;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 6px;
+  font-size: 15px;
+
+}
+
+.banner-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.banner-info .left {
+  width: 50%;
+}
+
+.banner-info .left p {
+  font-size: 20px;
+}
+
+.banner-info .left h1 {
+  font-size: 40px;
+}
+
+.banner-info .right {
+  width: 50%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.cell {
+  background-color: #000;
+  color: #fff;
+
+  height: 120px;
+  display: flex;
+  width: 120px;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px;
+  font-size: 22px;
+
+  flex-direction: column;
+}
+
+.cell p {
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+.sub-infos {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.sub-infos div {
+  flex: 1;
+  background: #021919;
+  height: auto;
+  border-radius: 30px;
+  padding: 20px
+}
+
+.sub-infos div h1 {
+  margin-top: 40px;
+  color: white;
+  font-size: 35px;
+}
+
+.sub-infos div p {
+  margin-top: 30px;
+  color: white;
+  font: 20px;
+}
+
+.toggle-wrapper {
+  border: 1px solid #fff;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 30px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  background-color: transparent;
+}
+
+.toggle-option {
+  padding: 5px 1dpx;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.toggle-option.active {
+  outline: 2px solid white;
+  border-radius: 30px;
+
+  /* 💡 KEY PART */
+  outline-offset: 9px;
+  /* moves outline inward so it overlaps the wrapper */
+}
+
+.side-info {
+  background-color: #021919;
+  height: 417px;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.side-info h2 {
+  margin-top: 50px;
+  color: white;
+}
+
+.side-info p {
+  color: white;
+}
+
+.side-info button {
+  background-color: white;
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+}
+
+.vid-content {
+  background: radial-gradient(#021919, #088484);
+}
+
+.data-section {
+  background-image: radial-gradient(at 40% 55%,
+      /* X = 30% (left), Y = 50% (center vertically) */
+      #062517 25%,
+      #ffffff00,
+      #2a4f3200);
+  padding: 60px;
+  border-radius: 16px;
+  color: white;
+}
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #1c1c1c;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}

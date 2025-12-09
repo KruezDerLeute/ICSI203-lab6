@@ -7,6 +7,10 @@
   font-family: 'JetBrains Sans';
 }
 
+.text {
+  display: none;
+}
+
 body {
   margin: 0;
   padding: 0;

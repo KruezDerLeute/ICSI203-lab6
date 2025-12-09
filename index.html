@@ -27,17 +27,17 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="gen-header col-lg-8">
+    <header class="gen-header originalHeader">
       <div class="container">
         <img alt="logo" src="./resources/jetBrainsLogo.png" class="logo" />
         <div class="title-area">
-          <a>AI</a>
-          <p>Developer Tools</p>
-          <p>Team Tools</p>
-          <p>Education</p>
-          <p>Solutions</p>
-          <p>Support</p>
-          <p>Store</p>
+          <p class="hideHeader">AI</p>
+          <p class="hideHeader">Developer Tools</p>
+          <p class="hideHeader">Team Tools</p>
+          <p class="hideHeader">Education</p>
+          <p class="hideHeader">Solutions</p>
+          <p class="hideHeader">Support</p>
+          <p class="hideHeader">Store</p>
           <i class="bi bi-search icon"></i>
           <i class="bi bi-person icon"></i>
           <i class="bi bi-cart icon"></i>
@@ -45,7 +45,32 @@
         </div>
       </div>
     </header>
-    <nav class="gen-sub-header">
+
+    <header class="for-smol">
+      <div class="container">
+        <img alt="logo" src="./resources/jetBrainsLogo.png" class="logo" />
+        <div class="title-area">
+          <p>AI</p>
+          <i class="bi bi-search icon"></i>
+          <span class="mdi mdi-translate icon"></span>
+        </div>
+      </div>
+    </header>
+
+    <header class="gen-header hiddenHeader">
+      <div class="container">
+        <img alt="logo" src="./resources/jetBrainsLogo.png" class="logo" />
+        <div class="text-wrapper">
+          <span>PyCharm</span>
+        </div>
+        <div class="title-area">
+          <i class="bi bi-search seachIcon"></i>
+          <i class="bi bi-list menuIcon"></i>
+        </div>
+      </div>
+    </header>
+
+    <nav class="gen-sub-header main-nav">
       <div class="container">
         <div class="left">
           <p>PyCharm</p>
@@ -95,13 +120,48 @@
           </div>
 
           <span>Pricing</span>
+          <br />
+          <div class="product-redirect hidden">Request a demo</div>
 
+          <div class="download hidden">Download</div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="gen-sub-header sec hidden">
+      <div class="container">
+        <div class="right">
           <div class="product-redirect">Request a demo</div>
-
           <div class="download">Download</div>
         </div>
       </div>
     </nav>
+
+    <nav
+      class="gen-sub-header third sub-hidden"
+      style="border-top: 1px solid #bababa;"
+    >
+      <div class="container">
+        <div class="left">
+          <div class="dropdown">
+            <span class="trigger" style="color:#bababa;"
+              >Overview
+              <i class="bi bi-chevron-down" style="color: #bababa;"></i
+            ></span>
+            <div class="menu">
+              <p>Getting Started</p>
+              <p>Python Trends</p>
+              <p>Blog</p>
+              <p>Documentation</p>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="download">Pricing</div>
+        </div>
+      </div>
+    </nav>
+
     <section class="intro-face col-lg-8">
       <img
         class="pc"
@@ -143,7 +203,7 @@
       </section>
 
       <p
-        style="margin-top: 100px; font-size: 70px; color: white;font-weight: 600;"
+        style="margin-top: 100px; font-size: 8vh; color: white;font-weight: 600;"
       >
         Focus on code and data.
         <br />
@@ -286,18 +346,186 @@
           </div>
         </div>
       </section>
-
-      <section>
-        <h1 style="color: white;">Features</h1>
-      </section>
     </div>
+
+    <footer>
+      <!-- TOP COLUMNS ---------------------------------------------------------->
+      <section class="container d-flex flex-wrap gap-5 footer-columns">
+        <!-- AI -->
+        <ul class="no1">
+          <li><span style="color:white;">AI</span></li>
+          <li>JetBrains AI</li>
+          <li>AI Assistant</li>
+          <li>Junie</li>
+          <li>AI in IDEs</li>
+          <li>AI Enterprise</li>
+          <li>AI News</li>
+        </ul>
+
+        <!-- Developer Tools -->
+        <ul class="no1">
+          <li><span style="color:white;">Developer Tools</span></li>
+          <li>All Products</li>
+          <li>IDEs</li>
+          <li>.NET and Visual Studio</li>
+          <li>Team Tools</li>
+          <li>Plugin Marketplace</li>
+          <li>Toolbox App</li>
+        </ul>
+
+        <!-- Solutions -->
+        <ul class="no1">
+          <li><span style="color:white;">Solutions</span></li>
+          <li>Business</li>
+          <li>Data</li>
+          <li>IDE Services</li>
+          <li>Remote Development</li>
+          <li>Game Development</li>
+          <li>DevOps</li>
+        </ul>
+
+        <!-- Initiatives -->
+        <ul class="no1">
+          <li><span style="color:white;">Initiatives</span></li>
+          <li>Kotlin</li>
+          <li>Open Source</li>
+          <li>JetBrains Research</li>
+          <li>JetBrains Mono</li>
+          <li>MPS</li>
+        </ul>
+
+        <!-- Education -->
+        <ul class="no1">
+          <li><span style="color:white;">Education</span></li>
+          <li>Students</li>
+          <li>Teachers</li>
+          <li>Bootcamps</li>
+          <li>Teams</li>
+          <li>Course Catalog</li>
+          <li>University Programs</li>
+        </ul>
+
+        <!-- Store -->
+        <ul class="no1">
+          <li><span style="color:white;">Store</span></li>
+          <li>Plans and Pricing</li>
+          <li>All Products Pack</li>
+          <li>dotUltimate</li>
+          <li>Partners and Resellers</li>
+          <li>Customers and Awards</li>
+        </ul>
+
+        <!-- Support -->
+        <ul class="no1">
+          <li><span style="color:white;">Support</span></li>
+          <li>Technical Support</li>
+          <li>Contact Sales</li>
+          <li>Documentation</li>
+          <li>JetBrains Account</li>
+        </ul>
+
+        <!-- Resources -->
+        <ul class="no1">
+          <li><span style="color:white;">Resources</span></li>
+          <li>Blog</li>
+          <li>Early Access</li>
+          <li>Events and Livestreams</li>
+          <li>Newsletters</li>
+          <li>Industry Reports</li>
+          <li>Inspectopedia</li>
+          <li>Desktop Art</li>
+        </ul>
+
+        <!-- Community -->
+        <ul class="no1">
+          <li><span style="color:white;">Community</span></li>
+          <li>User Groups</li>
+          <li>Open-Source Partnerships</li>
+          <li>Developer Recognition</li>
+          <li>Content Creators</li>
+        </ul>
+
+        <!-- Company -->
+        <ul class="no1">
+          <li><span style="color:white;">Company</span></li>
+          <li>About</li>
+          <li>Contacts</li>
+          <li>Careers</li>
+          <li>Brand Assets</li>
+          <li>Merchandise</li>
+          <li>Trust Center</li>
+        </ul>
+      </section>
+
+      <!-- BOTTOM PART ---------------------------------------------------------->
+     <section class="footer-bottom">
+  <div class="container">
+    <hr class="footer-divider" />
+
+    <!-- ROW 1: Social + Locale -->
+    <div class="footer-bottom-top d-flex justify-content-between align-items-center flex-wrap">
+
+      <!-- LEFT: SOCIAL ICONS -->
+      <div class="footer-social d-flex align-items-center gap-3">
+        <i class="bi bi-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="bi bi-linkedin"></i>
+        <i class="bi bi-youtube"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="bi bi-book"></i>
+        <i class="bi bi-rss"></i>
+        <i class="bi bi-controller"></i>
+      </div>
+
+      <!-- RIGHT: REGION + LANGUAGE -->
+      <div class="footer-locale d-flex align-items-center gap-4">
+        <div class="footer-locale-item d-flex align-items-center gap-2">
+          <i class="bi bi-globe2"></i>
+          <span>Mongolia</span>
+        </div>
+        <div class="footer-locale-item d-flex align-items-center gap-2">
+          <i class="bi bi-translate"></i>
+          <span>English</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ROW 2: LEGAL LINKS + DEVELOPED TEXT -->
+    <div class="footer-legal-row d-flex justify-content-between align-items-center flex-wrap mt-3">
+
+      <div class="footer-links d-flex flex-wrap gap-3">
+        <a href="#">Privacy and Security</a>
+        <a href="#">Privacy Notice</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Attributions</a>
+        <a href="#">Legal</a>
+        <a href="#">Genuine Tools</a>
+        <a href="#">Opt-Out</a>
+      </div>
+
+      <div class="footer-developed">
+        Developed with drive and <span>IntelliJ IDEA</span>
+      </div>
+
+    </div>
+
+    <!-- ROW 3: COPYRIGHT -->
+    <p class="footer-copy mt-3 mb-0">
+      Copyright © 2000–2025 JetBrains s.r.o.
+    </p>
+
+  </div>
+</section>
+
   </body>
   <script>
     window.addEventListener("scroll", function () {
       const header = document.querySelector(".gen-header");
       const nav = document.querySelector(".gen-sub-header");
 
-      if (window.scrollY >= header.offsetHeight) {
+      if (window.scrollY >= header.offsetHeight && window.innerWidth > 1400) {
         nav.classList.add("sticky-nav");
       } else {
         nav.classList.remove("sticky-nav");
